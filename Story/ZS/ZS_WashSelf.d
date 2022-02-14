@@ -11,7 +11,7 @@ func void ZS_WashSelf ()
 	if !(Npc_IsOnFP(self,"WASH"))
 	{
 		AI_GotoWP (self,self.wp);			// Gehe zum Tagesablaufstart
-	}	
+	};
 	if (Wld_IsFPAvailable (self,"WASH"))
 	{
 		AI_GotoFP (self, "WASH");
