@@ -965,7 +965,7 @@ FUNC VOID Info_Diego_JoinAnalyze_Info()
 	{
 		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_03"); //Thorus ist fast der Kopf geplatzt, so hat er geschrien - was hast du dir dabei gedacht, gerade diese Sache SO zu vermasseln?
 		Points_OC = Points_OC - 5;						
-	}
+	};
 	// ----WEITER-------------------------------------------------------
 	if (Fisk_GetNewHehler == LOG_SUCCESS)
 	{
