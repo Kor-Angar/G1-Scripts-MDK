@@ -55,13 +55,13 @@ FUNC VOID  DIA_Harlok_FetchHarlok_Info()
 	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Ich soll dich daran erinnern, dass du ihn ablösen sollst."			,DIA_Harlok_FetchHarlok_Please);
 };
 
-func int DIA_Harlok_FetchHarlok_Please()
+func VOID DIA_Harlok_FetchHarlok_Please()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //Ich soll dich daran erinnern, dass du ihn ablösen sollst.
 	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Das ist aber nett von dir. Erinnere mich doch noch mal, wenn ich ausgeschlafen habe, ja?
 };
 
-func int DIA_Harlok_FetchHarlok_OrElse()
+func VOID DIA_Harlok_FetchHarlok_OrElse()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_OrElse_15_00"); //Schwing deinen Hintern zu den Krautstampfern, oder es gibt Saures.
 	AI_Output (self, other,"DIA_Harlok_FetchHarlok_OrElse_01_01"); //VERSUCH doch mal, dich mit mir anzulegen, du Penner!
@@ -69,7 +69,7 @@ func int DIA_Harlok_FetchHarlok_OrElse()
 	AI_StopProcessInfos(self);
 };
 
-func int DIA_Harlok_FetchHarlok_BACK()
+func VOID DIA_Harlok_FetchHarlok_BACK()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_BACK_15_00"); //Schon gut.
 	Info_ClearChoices (DIA_Harlok_FetchHarlok);

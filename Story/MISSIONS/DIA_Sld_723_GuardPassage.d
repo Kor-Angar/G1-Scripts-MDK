@@ -130,7 +130,7 @@ func int Info_SLD_723_LastWarn_Condition()
 	};
 };
 
-func int Info_SLD_723_LastWarn_Info()
+func VOID Info_SLD_723_LastWarn_Info()
 {
 	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//Ich sage es nicht noch einmal! KEINEN SCHRITT WEITER!
 
@@ -164,7 +164,7 @@ func int Info_SLD_723_Attack_Condition()
 	};
 };
 
-func int Info_SLD_723_Attack_Info()
+func VOID Info_SLD_723_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;
@@ -201,7 +201,7 @@ func int Info_SLD_723_PAROLE_Condition()
 	};
 };
 
-func int Info_SLD_723_PAROLE_Info()
+func VOID Info_SLD_723_PAROLE_Info()
 {
 	Info_ClearChoices 	(Info_SLD_723_PAROLE);
 	Info_AddChoice 		(Info_SLD_723_PAROLE,"Cronos hat mir die Erlaubnis gegeben!"	,	Info_SLD_723_Parole_CRONOS);  

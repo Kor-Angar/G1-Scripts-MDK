@@ -362,7 +362,7 @@ func int Info_Org_876_LastWarn_Condition()
 	};
 };
 
-func int Info_Org_876_LastWarn_Info()
+func void Info_Org_876_LastWarn_Info()
 {
 	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Du hörst wohl schlecht, Bürschchen!
 
@@ -397,7 +397,7 @@ func int Info_Org_876_Attack_Condition()
 	};
 };
 
-func int Info_Org_876_Attack_Info()
+func void Info_Org_876_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;

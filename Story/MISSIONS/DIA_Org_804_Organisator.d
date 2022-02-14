@@ -208,7 +208,7 @@ func int Info_Org_804_LastWarn_Condition()
 	};
 };
 
-func int Info_Org_804_LastWarn_Info()
+func void Info_Org_804_LastWarn_Info()
 {
 	AI_Output (self, hero,"Info_Org_804_LastWarn_06_00"); //Geh, solange du noch gehen KANNST!
 
@@ -243,7 +243,7 @@ func int Info_Org_804_Attack_Condition()
 	};
 };
 
-func int Info_Org_804_Attack_Info()
+func void Info_Org_804_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;

@@ -137,7 +137,7 @@ func int Info_Grd_218_Attack_Condition()
 	};
 };
 
-func int Info_Grd_218_Attack_Info()
+func VOID Info_Grd_218_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;

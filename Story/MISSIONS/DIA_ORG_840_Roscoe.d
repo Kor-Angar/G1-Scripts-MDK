@@ -224,7 +224,7 @@ func int Info_Roscoe_LastWarn_Condition()
 	};
 };
 
-func int Info_Roscoe_LastWarn_Info()
+func void Info_Roscoe_LastWarn_Info()
 {
 	AI_Output (self, hero,"Info_Roscoe_LastWarn_10_00"); //Du hörst wohl schlecht.
 
@@ -259,7 +259,7 @@ func int Info_Roscoe_Attack_Condition()
 	};
 };
 
-func int Info_Roscoe_Attack_Info()
+func void Info_Roscoe_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;

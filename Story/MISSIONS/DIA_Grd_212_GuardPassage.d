@@ -78,7 +78,7 @@ FUNC INT Info_Grd_212_LastWarn_Condition()
 	};
 };
 
-func int Info_Grd_212_LastWarn_Info()
+func VOID Info_Grd_212_LastWarn_Info()
 {
 	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter für die Würmer!
 
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_212_Attack_Condition()
 	};
 };
 
-func int Info_Grd_212_Attack_Info()
+func VOID Info_Grd_212_Attack_Info()
 {
 	
 	hero.aivar[AIV_LASTDISTTOWP] 		= 0;
