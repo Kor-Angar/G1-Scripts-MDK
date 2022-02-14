@@ -15,7 +15,7 @@ func void ZS_HerbShop ()
 	if (Wld_IsFPAvailable (self, "SHOP"))
 	{
 		AI_GotoFP (self,"SHOP");
-	}
+	};
 
 	if (Npc_IsOnFP(self,"SHOP"))
 	{
